@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\MRAJUPAL\Downloads\ShoppingCart-day-1\OrderService"/>
+			<item value="C:\Users\MRAJUPAL\Downloads\123-main\GuestMicroservice"/>
+			<item value="C:\Users\MRAJUPAL\Downloads\123-main"/>
+			<item value="C:\Users\MRAJUPAL\Downloads\Case-Study_-Flight-Booking-System-master\LoginService"/>
+			<item value="C:\Users\MRAJUPAL\Downloads\spring-security-jwt-master"/>
+			<item value="C:\Users\MRAJUPAL\Downloads\CropDeal.Application-master\ZuulGateway"/>
+			<item value="C:\Users\MRAJUPAL\Downloads\Shopping_cart-study-6-day\CartamicroService"/>
+			<item value="C:\Users\MRAJUPAL\Downloads\CropDeal.Application-master"/>
+			<item value="C:\Users\MRAJUPAL\Downloads\Shopping_cart-study-6-day\WalletService"/>
+			<item value="C:\Users\MRAJUPAL\Downloads\Shopping_cart-study-6-day\OrderService"/>
+			<item value="C:\Users\MRAJUPAL\Downloads\Shopping_cart-study-6-day"/>
+			<item value="C:\Users\MRAJUPAL\Downloads\ShoppingCart-day-3\ProfileService1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

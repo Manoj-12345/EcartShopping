@@ -1,0 +1,6 @@
+spring.data.mongodb.uri=mongodb+srv://yesyou:1234@cluster0.abqfy.mongodb.net/Project?retryWrites=true&w=majority
+spring.application.name=guestmicroservice
+eureka.client.register-with-eureka=true
+eureka.client.fetch-registry=true
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka
+server.port=9096

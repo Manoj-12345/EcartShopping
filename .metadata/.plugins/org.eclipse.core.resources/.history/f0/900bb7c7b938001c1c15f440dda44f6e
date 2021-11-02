@@ -1,0 +1,4 @@
+spring.data.mongodb.uri=mongodb+srv://user:12345@user.sp1ha.mongodb.net/LoginDetails?retryWrites=true&w=majority
+
+server.port=8006
+spring.application.name=Loginservice
