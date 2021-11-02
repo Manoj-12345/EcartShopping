@@ -1,0 +1,122 @@
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="height: 60vh;">
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img16/vineet/Amazon-Pay-Later/Sep_2021/JUPITER_21/P4/Jupiter_GW-Editorial_P4_2300x646._CB637734438_.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" style="height: 60vh;">
+        <img src="https://m.media-amazon.com/images/I/71VCHx-ZvdL._SX3000_.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" style="height: 60vh;">
+        <img src="https://cdn.pixabay.com/photo/2017/03/13/17/26/ecommerce-2140603__340.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+
+<div class="card-top container-fluid">
+
+    <div class="container d-flex">
+        <div class="item">
+            <a (click)="filter('')">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+                <h6>All products</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('electronics')">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" alt="">
+                <h6>Electronics</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('fashion')">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100" alt="">
+                <h6>Fashion</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('jewelery')">
+                <img style="width: 62px; margin-top: 5px;" src="https://rukminim1.flixcart.com/image/580/696/kkh6zrk0/jewellery-set/o/w/z/gt-ns-862-matushri-art-original-imafzt9teacakjyn.jpeg?q=50" alt="">
+                <h6>Jewllery</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('toys')">
+                <img style="width: 70px; margin-top: 5px;" src="https://image3.mouthshut.com/images/ImagesR/imageuser_l/2021/1/925640223-3697775-1.jpg?rnd=51449" alt="">
+                <h6>Toys</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('kitchen')">
+                <img style="width: 80px; margin-top: 5px;" src="https://image3.mouthshut.com/images/imagesp/xl/925679s.jpg" alt="">
+                <h6>Kitchen</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('Mobiles')">
+                <img style="width: 55px; margin-top: 5px;" src="https://m.media-amazon.com/images/I/51Beo+N7ySL._AC_UL480_QL65_.jpg" alt="">
+                <h6>Mobiles</h6>
+            </a>
+        </div>
+
+
+        
+
+
+
+
+
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of filterCategory | filter:searchKey:'title'">
+            <div class="card col-md-3">
+                <img src="{{item.image}}" alt="">
+                <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
+                <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
+                <p><strong>Price:</strong> ₹ {{item.price}}</p>
+                <button class="btn btn-primary" (click)=addtocart(item)>Add to cart</button>
+            </div>
+        </ng-container>
+    </div>
+</div>
+
+
+
+<!--icons-->
+
+    <footer class="container" class="bg-light ">
+      <div >
+          <div class="row">
+              <div class="col-md-4"><span class="copyright">Copyright&nbsp;©MANOJKUMAR</span></div>
+              <div class="col-md-4">
+                  <ul class="list-inline social-buttons">
+                      <li class="list-inline-item"><a href="https://www.instagram.com/r._manoj_kumar/"><i class="fa fa-instagram"></i></a></li>
+                      <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCL_g98_Q3uITBiWnYxMcdfQ"><i class="fa fa-youtube"></i></a></li>
+                      <li class="list-inline-item"><a href="https://www.linkedin.com/in/rajupalem-manoj-kumar-60938a16a/?originalSubdomain=in"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4">
+                  <ul class="list-inline quicklinks">
+                      <li class="list-inline-item"><a href="https://stories.flipkart.com/blog-privacy-policy/">Privacy Policy</a></li>
+                      <li class="list-inline-item"><a href="https://www.termsandconditionsgenerator.com/terms-conditions-ecommerce-stores/">Terms of Use</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </footer>
+  
+
+  
